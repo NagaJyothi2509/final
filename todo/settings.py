@@ -37,18 +37,30 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'todos'
+    'todos',
+    'corsheaders'
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+
+
+CORS_ALLOWED_ORIGINS = [
+    "https://6502f63275adcf59fa732ce9--jovial-squirrel-2102a7.netlify.app",
+    # Add any other allowed origins here
+]
+
+# To allow credentials (e.g., cookies) to be sent with the request, set this option to True:
+CORS_ALLOW_CREDENTIALS = True
 
 ROOT_URLCONF = 'todo.urls'
 
