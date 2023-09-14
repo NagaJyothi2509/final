@@ -54,10 +54,7 @@ MIDDLEWARE = [
 
 
 
-CORS_ALLOWED_ORIGINS = [
-    "https://6502f63275adcf59fa732ce9--jovial-squirrel-2102a7.netlify.app",
-    # Add any other allowed origins here
-]
+
 
 # To allow credentials (e.g., cookies) to be sent with the request, set this option to True:
 CORS_ALLOW_CREDENTIALS = True
